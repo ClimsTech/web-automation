@@ -1,6 +1,19 @@
 name: CI
 
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '0 */1 * * *'
+
+  repository_dispatch:
+    types:
+      - ci-trigger
+      - manual-trigger
+
+  workflow_dispatch:
+
+env:
+  CI: true
 
 jobs:
   build:
