@@ -3,7 +3,7 @@ name: CI
 on:
   push:
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: '*/3 * * * *'
 
   repository_dispatch:
     types:
