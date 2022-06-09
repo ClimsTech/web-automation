@@ -18,7 +18,7 @@ import { setPromptText } from '../support/action/setPromptText';
 import { switchToFrame } from '../support/action/switchToIframe';
 
 When(
-  /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
+  /^I (click|doubleclick) on the (link|button|element) `([^`]*)?`$/,
   clickElement,
 );
 
