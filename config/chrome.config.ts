@@ -4,14 +4,16 @@ export const capabilitiesChromeConfig = {
   'goog:chromeOptions': {
     args: [
       '--no-sandbox',
+      '--whitelist-ip *',
+      '--disable-dev-shm-usage',
     ].concat(
       process.env.VNC_SUPPORT === 'true' ? [
         // When debugging with VNC support headless mode is not enabled
         // to allow viewing actions in the browser.
       ] : [
-          '--headless',
-          '--disable-gpu',
-        ],
+        '--headless',
+        '--disable-gpu',
+      ],
     ),
   },
   'cjson:metadata': {
