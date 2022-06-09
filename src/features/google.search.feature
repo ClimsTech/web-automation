@@ -5,6 +5,7 @@ Feature: Performing a Google Search
     Background:
         Given I open the url "https://google.com"
 
+    @OnlyChrome
     @Verbose
     Scenario Outline: Searching for term "<search>"
         When I set "<search>" to the inputfield "[name=q]"
@@ -15,4 +16,4 @@ Feature: Performing a Google Search
 
         Examples:
         |search|url|title|
-        |climstech.com|https://climstech.com/|CLIMSTECH|
+        |climstech.com|https://climstech.com/|climstech|
