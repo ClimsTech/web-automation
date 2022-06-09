@@ -12,5 +12,5 @@ export function clickElement(action: string, type: string, selector: string): vo
 
   checkIfElementExists(selector2);
 
-  $(selector2)[method]();
+  $$(selector2)[0][method]();
 }
