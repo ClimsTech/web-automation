@@ -17,3 +17,5 @@ Feature: Performing a Google Search
         Examples:
         |search|url|title|
         |climstech.com|https://climstech.com/|climstech|
+        |climstech|https://climstech.com/|climstech|
+        |ilusons.com|https://ilusons.com/|ilusons|
