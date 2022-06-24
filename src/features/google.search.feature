@@ -19,3 +19,9 @@ Feature: Performing a Google Search
         |climstech.com|https://climstech.com/|climstech|
         |climstech|https://climstech.com/|climstech|
         |ilusons.com|https://ilusons.com/|ilusons|
+        |clims tech|https://climstech.com/|climstech|
+        |clims tech linkedin|https://climstech.com/|climstech|
+        |clims tech devops|https://climstech.com/|climstech|
+        |climstech devops|https://climstech.com/|climstech|
+        |clims tech mongodb|https://climstech.com/|climstech|
+        |climstech mongodb|https://climstech.com/|climstech|
